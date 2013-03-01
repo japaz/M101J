@@ -1,9 +1,6 @@
 package com.tengen;
 
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.MongoClient;
-import com.mongodb.ServerAddress;
+import com.mongodb.*;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import spark.Request;
@@ -13,8 +10,6 @@ import spark.Spark;
 
 import java.io.StringWriter;
 import java.net.UnknownHostException;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -40,11 +35,10 @@ public class HelloWorldMongoDBSparkFreemarkerStyle {
                 StringWriter writer = new StringWriter();
                 try {
                     Template helloTemplate = configuration.getTemplate("hello.ftl");
-                    Map<String, Object> helloMap = new HashMap<String, Object>();
 
-                    helloMap.put("name", "Freemarker");
+                    DBObject document = collection.findOne();
 
-                    helloTemplate.process(helloMap, writer);
+                    helloTemplate.process(document, writer);
                 } catch (Exception e) {
                     halt(500);
                     e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
