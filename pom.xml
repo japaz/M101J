@@ -6,7 +6,8 @@
   <artifactId>M101J</artifactId>
   <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>HW2_1</module>
+        <module>HW2_2</module>
+        <module>HW2_3</module>
     </modules>
     <packaging>pom</packaging>
 
