@@ -5,7 +5,10 @@
   <groupId>com.10gen</groupId>
   <artifactId>M101J</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <modules>
+        <module>HW2_1</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <name>M101J</name>
   <url>http://maven.apache.org</url>

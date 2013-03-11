@@ -2,9 +2,7 @@ package com.tengen;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-import sun.applet.resources.MsgAppletViewer_zh_CN;
 
-import java.io.IOException;
 import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.Map;

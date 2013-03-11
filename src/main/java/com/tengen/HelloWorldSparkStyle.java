@@ -5,8 +5,6 @@ import spark.Response;
 import spark.Route;
 import spark.Spark;
 
-import javax.xml.soap.SOAPPart;
-
 /**
  * Created with IntelliJ IDEA.
  * User: alberto
