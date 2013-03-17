@@ -25,6 +25,7 @@ import com.mongodb.DBObject;
 import com.mongodb.WriteResult;
 import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -116,6 +117,26 @@ public class BlogPostDAO {
         // - email is optional and may come in NULL. Check for that.
         // - best solution uses an update command to the database and a suitable
         //   operator to append the comment on to any existing list of comments
+
+        DBObject post = findByPermalink(permalink);
+
+        if (post != null) {
+            ArrayList<DBObject> comments = (ArrayList<DBObject>) post.get("comments");
+            if (comments == null) {
+                comments = new ArrayList<DBObject>();
+            }
+
+            DBObject comment = new BasicDBObject("author", name)
+                    .append("body", body);
+
+            if (email != null) {
+                comment.put("email", email);
+            }
+
+            comments.add(comment);
+
+            postsCollection.save(post);
+        }
 
 
 
