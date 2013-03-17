@@ -104,9 +104,6 @@ public class BlogPostDAO {
 
 
 
-
-
-
     // Append a comment to a blog post
     public void addPostComment(final String name, final String email, final String body,
                                final String permalink) {
