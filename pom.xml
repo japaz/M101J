@@ -8,6 +8,7 @@
     <modules>
         <module>HW2_2</module>
         <module>HW2_3</module>
+        <module>HW3_1</module>
     </modules>
     <packaging>pom</packaging>
 

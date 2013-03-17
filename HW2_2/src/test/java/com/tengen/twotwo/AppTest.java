@@ -1,4 +1,4 @@
-package com.tengen.twoone;
+package com.tengen.twotwo;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
