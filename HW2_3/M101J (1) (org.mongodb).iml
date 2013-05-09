@@ -10,14 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.mongodb:mongo-java-driver:2.10.1" level="project" />
-    <orderEntry type="library" name="Maven: spark:spark:0.9.9.4-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
-    <orderEntry type="library" name="Maven: org.eclipse.jetty.aggregate:jetty-webapp:7.3.0.v20110203" level="project" />
-    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
-    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.19" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.7" level="project" />
   </component>
 </module>
 
